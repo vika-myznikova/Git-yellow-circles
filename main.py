@@ -15,7 +15,7 @@ class CircleDrawer(QMainWindow):
         self.pushButton.clicked.connect(self.draw_circle)
 
     def draw_circle(self):
-        diameter = random.randint(1, 100)
+        diameter = random.randint(10, 100)
         x = random.randint(0, self.width() - diameter)
         y = random.randint(0, self.height() - diameter)
         self.circles.append((x, y, diameter))
